@@ -85,3 +85,63 @@ main div button:hover {
     background: orangered;
     transform: translate(0px, -10px);
 }
+
+.home {
+    background: orangered;
+    color: white;
+    transition: 0.5s;
+    transform: translate(10px, 0px);
+}
+
+
+@media (max-width: 500px) {
+    body,*{
+        margin: 0;
+        padding: 0;
+    }
+    aside {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    nav button {
+        width: 18vw;
+    }
+    nav a{
+        background: none;
+    }
+    nav button:hover {
+        transform: translate(0px,0px);
+
+    }
+    main {
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    main div {
+        width: 90vw;
+    }
+    main div input {
+        width: 200px;
+    }
+    main div button {
+        margin-left: 90px;
+    }
+    .home {
+        background: orangered;
+        transform: translate(0px,0px);
+    }
+}

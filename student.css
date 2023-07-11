@@ -46,57 +46,42 @@ main {
     left: 15vw;
     width: 85vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
-main a{
-    text-decoration: none;
-    background: none;
-}
-main button {
-    width: 300px;
-    height: 15vh;
+main div {
+    margin: auto;
+    background: wheat;
+    width: 50vw;
+    height: 70vh;
+    margin-top: 50px;
+    padding-top: 50px;
     border-radius: 10px;
-    font-size: 20px;
+}
+main div input {
+    margin-top: 30px;
+    margin-left: 10vw;
+    padding: 20px;
+    width: 350px;
+    font-size: 15px;
+}
+main div select {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 15px;
+}
+main div button {
+    margin-left: 250px;
+    margin-top: 50px;
+    padding: 10px;
+    width: 150px;
+    height: 10vh;
+    border-radius: 20px;
+    font-size: 16px;
+    color: teal;
     transition: 0.5s;
+    font-weight: bolder;
 }
-main button:hover {
-    background-color: orangered;
-    transform: translate(10px, 20px);
-}
-
-
-
-
-@media (max-width: 500px) {
-    body,*{
-        margin: 0;
-        padding: 0;
-    }
-    aside {
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        height: 20vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100vw;
-    }
-    nav button {
-        width: 19vw;
-    }
-    nav a{
-        background: none;
-    }
-    nav button:hover {
-        transform: translate(0px,0px);
-
-    }
+main div button:hover {
+    background: orangered;
+    transform: translate(0px, -10px);
 }

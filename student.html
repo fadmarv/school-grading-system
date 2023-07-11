@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="student.css">
 </head>
 <body>
     <aside>
@@ -17,10 +17,19 @@
         </nav>
     </aside>
     <main>
-        <a href="#"><button>Add New Record</button></a>
-        <a href="student.html"><button>Add New Student</button></a>
+        <div>
+            <input id="firstName" type="text" placeholder="First name"><br>
+            <input id="lastName" type="text" placeholder="Last name"><br>
+            <input id="age" type="date"><br><br>
+            <select name="Gender" id="gender">
+                <option value="gen">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <button onclick="submit()">SUBMIT</button>
+        </div>
     </main>
-
+    
 
     <script src="main.js"></script>
 </body>
